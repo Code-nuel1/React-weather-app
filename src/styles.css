@@ -1,0 +1,155 @@
+body {
+	background-image: url("background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: white;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.weather-container {
+	padding: 20px;
+	margin: 60px;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0));
+	border-radius: 20px;
+	height: 60vh;
+	box-shadow: 8px 3px 30px 3px black;
+}
+.location {
+	font-weight: bold;
+	font-size: 30px;
+	color: yellow;
+	font-family: cursive;
+}
+.temperature {
+	font-size: 18px;
+	margin-top: 22px;
+}
+.temperature img {
+	height: 15rem;
+}
+.description {
+	display: inline-flex;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+.description p {
+	padding-inline: 130px;
+	padding-block: 13px;
+}
+input {
+	width: 70%;
+	padding: 10px;
+	margin-top: 20px;
+	background: transparent;
+	border: 1px solid white;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	border-radius: 10px;
+	box-shadow: 8px 3px 25px 3px black;
+}
+::placeholder {
+	color: white;
+	font-weight: normal;
+}
+button {
+	padding: 10px;
+	color: white;
+	background: transparent;
+	border: none;
+	position: relative;
+	right: 50px;
+}
+.branding {
+	background: rgba(255, 255, 255, 0.7);
+	color: blue;
+
+	padding: 8px;
+}
+.unit {
+	left: 10%;
+	position: relative;
+	margin-top: 5px;
+}
+.unit button {
+	margin-inline: 12px;
+	padding: 10px;
+}
+.unit button:focus {
+	background: rgba(195, 5, 5, 0.7);
+	border-radius: 4px;
+}
+@media (min-width: 320px) {
+	.description p {
+		padding-inline: 20px;
+		margin: auto;
+	}
+	.description {
+		padding: inherit;
+	}
+	.unit button {
+		padding: auto;
+		margin-inline: 5px;
+	}
+	.unit {
+		position: relative;
+		left: 28%;
+	}
+}
+@media (max-width: 768px) {
+	.description p {
+		padding-inline: 30px;
+	}
+	.description {
+		padding: auto;
+	}
+	.unit {
+		position: relative;
+		left: 13%;
+	}
+}
+@media (min-width: 800px) {
+	.weather-container {
+		margin-inline: 120px;
+	}
+	.description p {
+		padding-inline: 50px;
+	}
+}
+@media (min-width: 1100px) {
+	.weather-container {
+		margin-inline: 150px;
+	}
+	.description p {
+		padding-inline: 100px;
+	}
+	.unit {
+		position: relative;
+		left: 5%;
+	}
+}
+@media (max-height: 20px) {
+	.weather-container {
+		margin-inline: auto;
+	}
+	.description {
+		height: fit-content;
+	}
+	.unit,
+	.unit button,
+	.temperature,
+	.branding {
+		padding: auto;
+		margin: auto;
+	}
+}
